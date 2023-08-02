@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <lable>value1</lable>
+        <input type="text" value="0" id="value1" onkeyup="add()"><br><br>
+        <label>value2</label>
+        <input type="text" value="0" id="value2" onkeyup="add()"><br>
+        <h1 onclick="add()">=</h1>
+        <label>output</label>
+        <input type="text" value="0" id="output" readonly>
+        <script type="text/javascript">
+         function add(){
+             var a=document.getElementById('value1').value;
+             var b=document.getElementById('value2').value;
+             var c=Number(a)+Number(b)
+             document.getElementById('output').value=c;
+         }
+        </script>
+    </body>
+</html>
